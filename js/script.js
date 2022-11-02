@@ -44,4 +44,10 @@ function combinatoricSelections(limit) {
     return total;
 }
 
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("limitinfo").innerHTML = txt;
+}
+
    
