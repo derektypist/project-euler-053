@@ -9,7 +9,7 @@ function getLimitInfo() {
         txt += `Invalid Input.  Please enter a whole number between 100 and 1000000.  Do not include leading zeros.`;
     } else {
         txt += `You have entered the limit of ${num}. <p>`;
-        txt += `Number of values of nCr, for 1 &le; n &le; 100, greater than ${num} is ${combinatoricSelections(num)}.`
+        txt += `Number of values of nCr, for 1 ≤ n ≤ 100, greater than ${num} is ${combinatoricSelections(num)}.`
     }
 
     // Display Information in the Browser
