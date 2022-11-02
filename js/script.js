@@ -15,3 +15,33 @@ function getLimitInfo() {
     // Display Information in the Browser
     document.getElementById("limitinfo").innerHTML = txt;
 }
+
+// Function to Calculate the factorial of a number n
+function factorial(n) {
+    return n<=1 ? 1 : n * factorial(n-1);
+}
+
+// Function to Calculate the number of combinations
+function combinations(n,r) {
+    return factorial(n)/(factorial(r) * factorial(n-r));
+}
+
+/*
+    Function to calculate the number of values of nCr, for 1 ≤ n ≤ 100, are
+    greater than the limit
+    combinatoricSelections(1000)    returns 4626
+    combinatoricSelections(10000)   returns 4431
+    combinatoricSelections(100000)  returns 4255
+    combinatoricSelections(1000000) returns 4075
+*/
+function combinatoricSelections(limit) {
+    let total = 0;
+    for (let i=1;i<=100;i++) {
+        for (let j=1;j<=i;j++) {
+            if (combinations(i,j) > limit) total++;
+        }
+    }
+    return total;
+}
+
+   
