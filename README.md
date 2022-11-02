@@ -16,7 +16,21 @@ Information at [Project Euler 053](https://projecteuler.net/problem=53)
 
 ## UX
 
+**Getting Started**
+
+Enter the limit as a whole number between 100 and 1000000.  Select the Submit Button.  You will see the number of values of nCr, for 1 &le; n &le; 100, greater than the limit.  If you have made an invalid input, an error message is displayed instead.  Select the Reset Button to clear the information or to start again.
+
 **User Stories**
+
+As a user, I get an error message, if I do any of:
+
+- Not enter anything in the input field
+- Entering text other than a number
+- Entering a number less than 100 or greater than 1000000
+- Including leading zeros such as 0100
+- Entering a number, but it is not an integer
+
+As a user, I can clear the information or start again by selecting the Reset Button.
 
 As a user, I expect the function `combinatoricSelections(1000)` to return a number.
 
