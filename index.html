@@ -26,5 +26,22 @@
         <p>It is not until n = 23, that a value exceeds one-million: 23C10 = 1144066.</p>
         <p>How many, not necessarily distinct, values of nCr, for 1 &le; n &le; 100, are greater than one-million (or other limits)? Begin by entering a number.</p>
     </section>
+
+    <!-- Set Up Form -->
+    <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mylimit" class="form-label">Limit (Required)</label>
+                <input class="form-control" title="Enter whole number between 100 and 1000000 (without leading zeros)" placeholder="Enter whole number between 100 and 1000000 (without leading zeros)" id="mylimit">
+            </article>
+
+            <!-- Set Up and Center Buttons -->
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" class="btn btn-info" onclick="getLimitInfo()">Submit</button>
+                <button type="reset" class="btn btn-warning" onclick="clearInfo()">Reset</button>
+            </article>
+        </form>
+    </section>
 </body>
 </html>
