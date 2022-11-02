@@ -18,7 +18,7 @@ Information at [Project Euler 053](https://projecteuler.net/problem=53)
 
 **Getting Started**
 
-Enter the limit as a whole number between 100 and 1000000.  Select the Submit Button.  You will see the number of values of nCr, for 1 &le; n &le; 100, greater than the limit.  If you have made an invalid input, an error message is displayed instead.  Select the Reset Button to clear the information or to start again.
+Enter the limit as a whole number between 100 and 1000000.  Select the Submit Button.  You will see the number of values of nCr, for 1 &le; n &le; 100, greater than the limit.  For example, if you entered 1000, you would expect to get 4626.  If you have made an invalid input, an error message is displayed instead.  Select the Reset Button to clear the information or to start again.
 
 **User Stories**
 
@@ -50,5 +50,7 @@ The function `combinatoricSelections(limit)` returns a number, where `limit` is 
 
 ## Features
 
-Allows the user to enter a number (limit)
+Allows the user to enter a number (limit) in order to get the number of values of nCr, for which 1 ≤ n ≤ 100 greater than the limit.  Performs checks on valid user input.  If the input is not valid, an error message is displayed instead.
+
+
 
