@@ -5,7 +5,7 @@ function getLimitInfo() {
     // Get the value of the input field
     let num = document.getElementById("mylimit").value;
     // Check if the input is valid
-    if (isNaN(num) || num.length==0 || num<100 || num>1000000 || (num.length > 1 && num[0] == "0") || !Number.isInteger(Number(num))) {
+    if (isNaN(num) || num.length == 0 || num < 100 || num > 1000000 || (num.length > 1 && num[0] == "0") || !Number.isInteger(Number(num))) {
         txt += `Invalid Input.  Please enter a whole number between 100 and 1000000.  Do not include leading zeros.`;
     } else {
         txt += `You have entered the limit of ${num}. <p>`;
@@ -18,12 +18,12 @@ function getLimitInfo() {
 
 // Function to Calculate the factorial of a number n
 function factorial(n) {
-    return n<=1 ? 1 : n * factorial(n-1);
+    return n <= 1 ? 1 : n * factorial(n - 1);
 }
 
 // Function to Calculate the number of combinations
-function combinations(n,r) {
-    return factorial(n)/(factorial(r) * factorial(n-r));
+function combinations(n, r) {
+    return factorial(n) / (factorial(r) * factorial(n - r));
 }
 
 /*
@@ -36,9 +36,9 @@ function combinations(n,r) {
 */
 function combinatoricSelections(limit) {
     let total = 0;
-    for (let i=1;i<=100;i++) {
-        for (let j=1;j<=i;j++) {
-            if (combinations(i,j) > limit) total++;
+    for (let i = 1; i <= 100; i++) {
+        for (let j = 1; j <= i; j++) {
+            if (combinations(i, j) > limit) total++;
         }
     }
     return total;
@@ -50,4 +50,3 @@ function clearInfo() {
     document.getElementById("limitinfo").innerHTML = txt;
 }
 
-   
