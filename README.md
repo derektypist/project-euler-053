@@ -52,5 +52,28 @@ The function `combinatoricSelections(limit)` returns a number, where `limit` is 
 
 Allows the user to enter a number (limit) in order to get the number of values of nCr, for which 1 ≤ n ≤ 100 greater than the limit.  Performs checks on valid user input.  If the input is not valid, an error message is displayed instead.
 
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.2 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-053) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+- [Project Euler](https://projecteuler.net)
+- [FreeCodeCamp](https://www.freecodecamp.org)
+
 
 
