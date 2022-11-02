@@ -10,7 +10,7 @@ In general, nCr = n!/(r!(n-r)!), where r &le; n, n! = n x (n-1) x...x 3 x 2 x 1,
 
 It is not until n = 23, that a value exceeds one-million: 23C10 = 1144066.
 
-How many, not necessarily distinct, values of nCr for 1 &le; n &le; 100, are greater than one-million (or other limits).
+How many, not necessarily distinct, values of nCr for 1 &le; n &le; 100, are greater than one-million (or other limits)?
 
 Information at [Project Euler 053](https://projecteuler.net/problem=53)
 
@@ -34,5 +34,7 @@ User Stories on function `combinatoricSelections(limit)` taken from [FreeCodeCam
 
 The function `combinatoricSelections(limit)` returns a number, where `limit` is a number.
 
+## Features
 
+Allows the user to enter a number (limit)
 
